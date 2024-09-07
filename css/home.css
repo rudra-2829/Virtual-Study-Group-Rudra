@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #44738b;
 }
 
 header {
@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4CAF50;
+    background-color: #499ccc;
 }
 
 .hero {
@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 .hero button {
-    background-color: #4CAF50;
+    background-color: #499ccc;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 .hero button:hover {
-    background-color: #3e8e41;
+    background-color: #1f597a;
 }
 
 .features {
@@ -114,7 +114,7 @@ nav a:hover {
 }
 
 .call-to-action button {
-    background-color: #4CAF50;
+    background-color: #499ccc;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -124,7 +124,7 @@ nav a:hover {
 }
 
 .call-to-action button:hover {
-    background-color: #3e8e41;
+    background-color: #1f597a;
 }
 
 footer {
