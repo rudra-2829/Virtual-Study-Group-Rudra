@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Study Group Organizer</h1>
+    </header>
+    <main>
+        <section class="signup-form">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <!-- Full Name Fields -->
+                <div class="full-name">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name">
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+
+                <br><br>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{10}" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+                <br><br>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" minlength="6" required>
+                <br><br>
+
+                <label for="college-name">College/School Name:</label>
+                <input type="text" id="college-name" name="college-name" required>
+                <br><br>
+
+                <label for="school-proof">Upload School/College Proof:</label>
+                <input type="file" id="school-proof" name="school-proof" required>
+                <br><br>
+
+                <label for="captcha">Captcha:</label>
+                <input type="text" id="captcha" name="captcha" required>
+                <img src="captcha-image.jpg" alt="Captcha Image" class="captcha-img">
+                <br><br>
+
+                <input type="submit" value="Sign Up">
+                <p>Already have an account? <a href="login.html" id="login-link">Login</a></p>
+
+                <!-- Error message placeholders -->
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </section>
+    </main>
+    <script src="/js/signup.js"></script>
+</body>
+</html>

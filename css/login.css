@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="tel"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.captcha-img {
+    display: block;
+    margin-top: 10px;
+}
+
+#forgot-password {
+    text-decoration: none;
+    color: #337ab7;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#forgot-password:hover {
+    color: #23527c;
+}
+
+/* Create Account Link (New Section) */
+#create-account {
+    text-decoration: none;
+    color: #337ab7;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#create-account:hover {
+    color: #23527c;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-form {
+        padding: 15px;
+    }
+}

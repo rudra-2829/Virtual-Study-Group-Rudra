@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.signup-form {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="tel"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.full-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.full-name label {
+    flex-basis: 30%;
+}
+
+.full-name input {
+    width: 100%;
+    flex-basis: 30%;
+    margin-bottom: 0;
+}
+
+.signup-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.captcha-img {
+    display: block;
+    margin-top: 10px;
+}
+
+#login-link {
+    text-decoration: none;
+    color: #337ab7;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#login-link:hover {
+    color: #23527c;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .signup-form {
+        padding: 15px;
+    }
+
+    .full-name {
+        flex-direction: column;
+    }
+
+    .full-name label,
+    .full-name input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
