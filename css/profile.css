@@ -26,6 +26,7 @@ body {
     background-color: #0073b1;
     padding: 20px;
     color: white;
+    position: relative;
 }
 
 .profile-pic {
@@ -40,12 +41,7 @@ body {
     margin-left: 20px;
 }
 
-.profile-info h1 {
-    margin-bottom: 5px;
-    font-size: 26px;
-}
-
-.profile-info p {
+.profile-info h1, .profile-info p {
     margin-bottom: 10px;
 }
 
@@ -57,6 +53,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .connect-btn:hover {
@@ -69,11 +66,30 @@ body {
 
 .profile-content section {
     margin-bottom: 30px;
+    border: 1px solid #e1e9ee;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .profile-content h2 {
     margin-bottom: 15px;
     color: #0073b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit-btn:hover {
+    background-color: #005f8e;
 }
 
 .skills ul {
@@ -86,4 +102,8 @@ body {
     margin-bottom: 8px;
     border-radius: 5px;
     display: inline-block;
+}
+
+.experience-item {
+    margin-bottom: 10px;
 }
