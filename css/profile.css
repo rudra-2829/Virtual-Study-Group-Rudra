@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,19 +6,45 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f2ef;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
     color: #333;
+}
+
+header {
+    background-color: #1a73e8;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.home-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #ffffff;
+    color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #e1e9ee;
 }
 
 .profile-container {
     width: 80%;
-    margin: 0 auto;
-    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-header {
@@ -41,19 +68,30 @@ body {
     margin-left: 20px;
 }
 
-.profile-info h1, .profile-info p {
+.profile-info h1,
+.profile-info p {
     margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+}
+
+.profile-info p {
+    font-size: 16px;
 }
 
 .connect-btn {
     padding: 10px 15px;
-    background-color: white;
+    background-color: #ffffff;
     color: #0073b1;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .connect-btn:hover {
@@ -69,6 +107,7 @@ body {
     border: 1px solid #e1e9ee;
     padding: 15px;
     border-radius: 5px;
+    background-color: #ffffff;
 }
 
 .profile-content h2 {
@@ -77,6 +116,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
 }
 
 .edit-btn {
@@ -86,10 +126,12 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
 .edit-btn:hover {
-    background-color: #005f8e;
+    background-color: #005bb5;
 }
 
 .skills ul {
@@ -97,13 +139,33 @@ body {
 }
 
 .skills ul li {
-    background-color: #f3f2ef;
+    background-color: #ffffff;
     padding: 10px;
     margin-bottom: 8px;
     border-radius: 5px;
+    border: 1px solid #e1e9ee;
     display: inline-block;
+    width: calc(50% - 10px);
 }
 
 .experience-item {
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        width: 95%;
+    }
+
+    .profile-info h1 {
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    .skills ul li {
+        width: 100%;
+    }
 }
