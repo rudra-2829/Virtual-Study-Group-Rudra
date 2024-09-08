@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #44738b;
+    background-color: #3775a8;
 }
 
 header {
@@ -114,7 +114,7 @@ nav a:hover {
 }
 
 .call-to-action button {
-    background-color: #499ccc;
+    background-color: #3b789b;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -128,7 +128,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 10px;
     text-align: center;
