@@ -6,20 +6,23 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #5a5a5a;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #333;
 }
 
 header {
-    background-color: #499ccc;
+    background-color: #1a73e8;
     width: 100%;
     padding: 20px;
     text-align: center;
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -33,21 +36,23 @@ main {
 .login-form {
     max-width: 400px;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #ddd;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
 .login-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #1a73e8;
 }
 
 .login-form label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
 .login-form input[type="email"],
@@ -57,22 +62,24 @@ main {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
 }
 
 .login-form input[type="submit"] {
-    background-color: #499ccc;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .login-form input[type="submit"]:hover {
-    background-color: #204a62;
+    background-color: #005bb5;
 }
 
 .captcha-img {
@@ -80,29 +87,19 @@ main {
     margin-top: 10px;
 }
 
-#forgot-password {
+#forgot-password,
+#create-account {
     text-decoration: none;
-    color: #337ab7;
+    color: #1a73e8;
     display: block;
     text-align: center;
     margin-top: 15px;
+    font-size: 14px;
 }
 
-#forgot-password:hover {
-    color: #23527c;
-}
-
-/* Create Account Link (New Section) */
-#create-account {
-    text-decoration: none;
-    color: #337ab7;
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-}
-
+#forgot-password:hover,
 #create-account:hover {
-    color: #23527c;
+    color: #005bb5;
 }
 
 /* Responsive Design */

@@ -27,6 +27,11 @@ nav {
     align-items: center;
 }
 
+.logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -50,6 +55,27 @@ nav a:hover {
     background-color: #0069c0;
 }
 
+#auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 1px solid #1a73e8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
 /* Hamburger Icon */
 .hamburger {
     display: none;
@@ -61,7 +87,7 @@ nav a:hover {
 .dropdown {
     background-color: #1a73e8;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 20px;
     width: 200px;
     border-radius: 5px;
@@ -196,35 +222,34 @@ nav a:hover {
     text-align: center;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
-    margin-top: 50px;
 }
 
 .call-to-action h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .call-to-action button {
-    background-color: #0069c0;
-    color: white;
+    background-color: #ffffff;
+    color: #1a73e8;
     padding: 12px 25px;
     border: none;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .call-to-action button:hover {
-    background-color: #1a4891;
-    transform: scale(1.05);
+    background-color: #1a73e8;
+    color: white;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -238,7 +263,20 @@ footer {
         display: block;
     }
 
-    .features ul {
-        flex-direction: column;
+    #dropdown-menu {
+        top: 50px;
+        right: 10px;
+    }
+
+    #dropdown-menu.visible {
+        display: block;
+    }
+
+    #auth-buttons {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 10px;
     }
 }
