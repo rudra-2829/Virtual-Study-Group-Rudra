@@ -22,11 +22,9 @@ function addGroup(groupName) {
         // Add click event to switch to this group
         groupItem.addEventListener('click', () => {
             if (currentGroup !== groupName) {
-                socket.emit('joinGroup', groupName);
                 currentGroup = groupName;
                 messagesContainer.innerHTML = ''; // Clear previous messages
-                // Load chat history when switching groups
-                socket.emit('chatHistory', groupName);
+                socket.emit('joinGroup', groupName); // Re-join the group and load its chat history
             }
         });
 
@@ -38,15 +36,13 @@ function addGroup(groupName) {
 joinButton.addEventListener('click', () => {
     const groupName = groupNameInput.value.trim();
     if (groupName) {
-        socket.emit('joinGroup', groupName);
+        socket.emit('joinGroup', groupName); // Join the new group
         addGroup(groupName);
         
         // Set current group to the newly created one
         currentGroup = groupName;
         
         groupNameInput.value = ''; // Clear the input field
-        groupNameInput.disabled = true;
-        joinButton.disabled = true;
         messageInput.disabled = false;
         sendButton.disabled = false;
     }
@@ -56,7 +52,7 @@ joinButton.addEventListener('click', () => {
 sendButton.addEventListener('click', () => {
     const message = messageInput.value; // Get the message input
     if (message && currentGroup) {
-        socket.emit('message', currentGroup, message); // Send the current group and message
+        socket.emit('message', currentGroup, message); // Send the message to the current group
         messageInput.value = ''; // Clear the input field
     }
 });
