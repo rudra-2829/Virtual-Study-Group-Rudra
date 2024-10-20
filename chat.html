@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="groups-container">
+            <h2>Groups</h2>
+            <div id="groups"></div>
+            <input type="text" id="group-name-input" placeholder="Enter group name" autocomplete="off">
+            <button id="join-button">Join Group</button>
+        </div>
+        <div id="messages-container">
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Type a message" autocomplete="off" disabled>
+            <button id="send-button" disabled>Send</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+#chat-container {
+    display: flex;
+}
+
+#groups-container {
+    width: 200px;
+    background: #fff;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+#messages-container {
+    flex: 1;
+    padding: 10px;
+}
+
+#messages {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.group-item {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.group-item:hover {
+    background: #f0f0f0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: #218838;
+}
